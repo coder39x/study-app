@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study App - Dashboard & Progress</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="logo">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <circle cx="16" cy="16" r="14" stroke="#6366f1" stroke-width="2"/>
+                    <path d="M16 8v8h6" stroke="#6366f1" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <span>StudyHub</span>
+            </div>
+            
+            <nav class="nav-menu">
+                <a href="#" class="nav-item active">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4z"/>
+                        <path d="M3 10a1 1 0 011-1h12a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6z"/>
+                    </svg>
+                    Dashboard
+                </a>
+                <a href="#" class="nav-item">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5z"/>
+                        <path d="M8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7z"/>
+                        <path d="M14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z"/>
+                    </svg>
+                    Progress
+                </a>
+                <a href="#" class="nav-item">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M5 3a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2V5a2 2 0 00-2-2H5z"/>
+                    </svg>
+                    Subjects
+                </a>
+                <a href="#" class="nav-item">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M5.5 13a3.5 3.5 0 01-.369-6.98 4 4 0 117.753-1 4.5 4.5 0 1-.666 8.495z"/>
+                    </svg>
+                    Timer
+                </a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <a href="#" class="nav-item">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3z"/>
+                        <path d="M15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707z"/>
+                        <path d="M18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1z"/>
+                        <path d="M15.657 14.243a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414l.707.707z"/>
+                        <path d="M11 17a1 1 0 102 0v-1a1 1 0 10-2 0v1z"/>
+                    </svg>
+                    Settings
+                </a>
+                <a href="#" class="nav-item">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                        <path d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z"/>
+                    </svg>
+                    Profile
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="header">
+                <div class="header-left">
+                    <h1>Welcome Back, Alex! 👋</h1>
+                    <p class="header-subtitle">Tuesday, October 5, 2026</p>
+                </div>
+                <div class="header-right">
+                    <button class="notification-btn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+                            <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+                        </svg>
+                    </button>
+                    <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=alex" alt="Profile" class="avatar">
+                </div>
+            </header>
+
+            <!-- Content Grid -->
+            <div class="content-grid">
+                <!-- Left Column: Profile & Stats -->
+                <section class="left-column">
+                    <!-- Profile Card -->
+                    <div class="card profile-card">
+                        <div class="profile-header">
+                            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=alex" alt="Profile" class="profile-avatar">
+                            <div class="profile-info">
+                                <h2>Alexandra Johnson</h2>
+                                <p class="grade-level">10th Grade (High School)</p>
+                                <div class="badge-group">
+                                    <span class="badge badge-primary">Top Performer</span>
+                                    <span class="badge badge-success">77-day Streak</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="profile-stats">
+                            <div class="stat">
+                                <span class="stat-value">2,450</span>
+                                <span class="stat-label">Total XP</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">156</span>
+                                <span class="stat-label">Hours Studied</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">89%</span>
+                                <span class="stat-label">Avg Score</span>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-secondary btn-full">Edit Profile</button>
+                    </div>
+
+                    <!-- Today's Goals -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Today's Goals</h3>
+                            <span class="goal-progress">2/5 Complete</span>
+                        </div>
+                        
+                        <div class="goals-list">
+                            <div class="goal-item completed">
+                                <input type="checkbox" id="goal1" checked>
+                                <label for="goal1">
+                                    <span class="goal-title">Complete Algebra Chapter 5</span>
+                                    <span class="goal-time">Completed at 9:30 AM</span>
+                                </label>
+                            </div>
+                            
+                            <div class="goal-item completed">
+                                <input type="checkbox" id="goal2" checked>
+                                <label for="goal2">
+                                    <span class="goal-title">Review Biology Notes</span>
+                                    <span class="goal-time">Completed at 11:15 AM</span>
+                                </label>
+                            </div>
+                            
+                            <div class="goal-item">
+                                <input type="checkbox" id="goal3">
+                                <label for="goal3">
+                                    <span class="goal-title">Spanish Vocabulary Quiz</span>
+                                    <span class="goal-time">Due by 3:00 PM</span>
+                                </label>
+                            </div>
+                            
+                            <div class="goal-item">
+                                <input type="checkbox" id="goal4">
+                                <label for="goal4">
+                                    <span class="goal-title">Essay Outline - History</span>
+                                    <span class="goal-time">Due by 5:00 PM</span>
+                                </label>
+                            </div>
+                            
+                            <div class="goal-item">
+                                <input type="checkbox" id="goal5">
+                                <label for="goal5">
+                                    <span class="goal-title">Practice Chemistry Problems</span>
+                                    <span class="goal-time">No deadline</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Study Streak -->
+                    <div class="card streak-card">
+                        <div class="card-header">
+                            <h3>Study Streak 🔥</h3>
+                        </div>
+                        
+                        <div class="streak-info">
+                            <div class="streak-number">77</div>
+                            <p class="streak-text">days in a row!</p>
+                            <p class="streak-subtitle">Keep it up! 5 more days to unlock the "Unstoppable" badge.</p>
+                        </div>
+
+                        <div class="streak-calendar">
+                            <div class="calendar-label">Last 12 days</div>
+                            <div class="calendar-grid">
+                                <div class="day active"></div>
+                                <div class="day active"></div>
+                                <div class="day active"></div>
+                                <div class="day active"></div>
+                                <div class="day active"></div>
+                                <div class="day active"></div>
+                                <div class="day active"></div>
+                                <div class="day inactive"></div>
+                                <div class="day active"></div>
+                                <div class="day active"></div>
+                                <div class="day active"></div>
+                                <div class="day active"></div>
+                            </div>
+                            <p class="calendar-legend"><span class="legend-active"></span> Active <span class="legend-inactive"></span> Break</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Right Column: Progress Dashboard -->
+                <section class="right-column">
+                    <!-- Weekly Progress -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Weekly Study Time</h3>
+                            <select class="time-filter">
+                                <option>This Week</option>
+                                <option>Last Week</option>
+                                <option>This Month</option>
+                            </select>
+                        </div>
+
+                        <div class="chart-container">
+                            <div class="bar-chart">
+                                <div class="bar-item">
+                                    <div class="bar-label">Mon</div>
+                                    <div class="bar-wrapper">
+                                        <div class="bar" style="height: 60%;"><span class="bar-value">2.4h</span></div>
+                                    </div>
+                                </div>
+                                <div class="bar-item">
+                                    <div class="bar-label">Tue</div>
+                                    <div class="bar-wrapper">
+                                        <div class="bar" style="height: 75%;"><span class="bar-value">3h</span></div>
+                                    </div>
+                                </div>
+                                <div class="bar-item">
+                                    <div class="bar-label">Wed</div>
+                                    <div class="bar-wrapper">
+                                        <div class="bar" style="height: 45%;"><span class="bar-value">1.8h</span></div>
+                                    </div>
+                                </div>
+                                <div class="bar-item">
+                                    <div class="bar-label">Thu</div>
+                                    <div class="bar-wrapper">
+                                        <div class="bar" style="height: 85%;"><span class="bar-value">3.4h</span></div>
+                                    </div>
+                                </div>
+                                <div class="bar-item">
+                                    <div class="bar-label">Fri</div>
+                                    <div class="bar-wrapper">
+                                        <div class="bar" style="height: 55%;"><span class="bar-value">2.2h</span></div>
+                                    </div>
+                                </div>
+                                <div class="bar-item">
+                                    <div class="bar-label">Sat</div>
+                                    <div class="bar-wrapper">
+                                        <div class="bar" style="height: 90%;"><span class="bar-value">3.6h</span></div>
+                                    </div>
+                                </div>
+                                <div class="bar-item">
+                                    <div class="bar-label">Sun</div>
+                                    <div class="bar-wrapper">
+                                        <div class="bar" style="height: 70%;"><span class="bar-value">2.8h</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="chart-stats">
+                            <div class="stat-item">
+                                <span class="stat-icon">📊</span>
+                                <div>
+                                    <p class="stat-name">Total This Week</p>
+                                    <p class="stat-amount">19.2 hours</p>
+                                </div>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-icon">📈</span>
+                                <div>
+                                    <p class="stat-name">Average Daily</p>
+                                    <p class="stat-amount">2.74 hours</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Subject Performance -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Subject Mastery</h3>
+                        </div>
+
+                        <div class="subject-list">
+                            <div class="subject-item">
+                                <div class="subject-header">
+                                    <span class="subject-name">Mathematics</span>
+                                    <span class="subject-score">92%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 92%;"></div>
+                                </div>
+                                <p class="subject-status status-excellent">Excellent - Master this! 🌟</p>
+                            </div>
+
+                            <div class="subject-item">
+                                <div class="subject-header">
+                                    <span class="subject-name">Biology</span>
+                                    <span class="subject-score">87%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 87%;"></div>
+                                </div>
+                                <p class="subject-status status-good">Very Good - Keep practicing! 📚</p>
+                            </div>
+
+                            <div class="subject-item">
+                                <div class="subject-header">
+                                    <span class="subject-name">English Literature</span>
+                                    <span class="subject-score">85%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 85%;"></div>
+                                </div>
+                                <p class="subject-status status-good">Very Good - Great work! ✍️</p>
+                            </div>
+
+                            <div class="subject-item">
+                                <div class="subject-header">
+                                    <span class="subject-name">Chemistry</span>
+                                    <span class="subject-score">76%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 76%;"></div>
+                                </div>
+                                <p class="subject-status status-needs-work">Good - Focus on weak areas 🔬</p>
+                            </div>
+
+                            <div class="subject-item">
+                                <div class="subject-header">
+                                    <span class="subject-name">Spanish</span>
+                                    <span class="subject-score">68%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 68%;"></div>
+                                </div>
+                                <p class="subject-status status-needs-work">Needs Work - More practice needed 🌍</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recent Achievements -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Recent Achievements</h3>
+                        </div>
+
+                        <div class="achievements-grid">
+                            <div class="achievement achieved">
+                                <div class="achievement-icon">🏆</div>
+                                <p class="achievement-name">Perfect Score</p>
+                                <p class="achievement-date">Oct 3</p>
+                            </div>
+                            <div class="achievement achieved">
+                                <div class="achievement-icon">🔥</div>
+                                <p class="achievement-name">Week Warrior</p>
+                                <p class="achievement-date">Sep 28</p>
+                            </div>
+                            <div class="achievement achieved">
+                                <div class="achievement-icon">🚀</div>
+                                <p class="achievement-name">Fast Learner</p>
+                                <p class="achievement-date">Sep 15</p>
+                            </div>
+                            <div class="achievement">
+                                <div class="achievement-icon">👑</div>
+                                <p class="achievement-name">All-Star</p>
+                                <p class="achievement-date">Locked</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recommended Next Steps -->
+                    <div class="card recommendations-card">
+                        <div class="card-header">
+                            <h3>Recommended for You</h3>
+                        </div>
+
+                        <div class="recommendations-list">
+                            <div class="recommendation-item">
+                                <div class="rec-icon">📖</div>
+                                <div class="rec-content">
+                                    <p class="rec-title">Master Spanish Verbs</p>
+                                    <p class="rec-desc">Your Spanish score needs a boost. Try this</p>
+                                </div>
+                                <button class="btn-small">Start</button>
+                            </div>
+                            
+                            <div class="recommendation-item">
+                                <div class="rec-icon">⚗️</div>
+                                <div class="rec-content">
+                                    <p class="rec-title">Chemistry: Stoichiometry</p>
+                                    <p class="rec-desc">Practice your weak topic from last quiz</p>
+                                </div>
+                                <button class="btn-small">Start</button>
+                            </div>
+
+                            <div class="recommendation-item">
+                                <div class="rec-icon">🎯</div>
+                                <div class="rec-content">
+                                    <p class="rec-title">Maintain Your Streak</p>
+                                    <p class="rec-desc">15 min session to keep your 77-day streak</p>
+                                </div>
+                                <button class="btn-small">Start</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
